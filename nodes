@@ -1,0 +1,12 @@
+
+public class nodes  {
+	
+
+	public int num;
+	public nodes next; 
+	public nodes self;
+	public nodes previous;
+	
+
+	}
+	
