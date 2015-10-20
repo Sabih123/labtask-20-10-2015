@@ -1,0 +1,63 @@
+
+public class mylinklist extends list {
+
+	private nodes list;
+	private nodes First = null;
+	private nodes Last = null;
+	
+	public void add(int num){
+		
+		list = new nodes();
+		list.num=num;
+		list.self=list;
+		list.next=null;
+		list.previous=null;
+		
+		if(First == Last && Last != null)
+		{
+			First.next = list;
+		}
+		
+		
+		if(First == null)
+		{
+			First = list;
+		}
+		
+		if(Last == null)
+		{
+			Last = list;
+		}
+		
+	}
+	public void remove(){
+	
+		list = list.previous;
+		list.next=null;
+	
+	}
+	
+	public void update()
+	{
+	while (list.next == null)
+	{
+		if (list.self==list)
+			{
+				list.num=19;
+			
+			System.out.println(list.num);
+		}
+			list=list.next;
+		}
+	}
+	public void search()
+	{
+	while (list.next==null)
+	{
+		if(list.self==list)
+			{
+				System.out.println("this node" + list);
+			}
+		}
+	}
+}
