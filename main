@@ -1,0 +1,32 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		mylinklist MyList = new mylinklist();
+		
+		MyList.add(12);
+		MyList.update();
+		MyList.search();
+		nodes list = new nodes();
+		nodes mynode = new nodes();
+		list.num=4;
+		list.self=list;
+		list.next=mynode;
+		list.previous=null;
+		
+		
+		
+		mynode.num=6;
+		mynode.self=mynode;
+		mynode.next=null;
+		mynode.previous=list;
+		
+		while (list.next!=null)
+		{
+		//	System.out.println(MyList.num);
+			
+		}
+	}
+
+}
